@@ -1,11 +1,11 @@
-function celsiusToFahrenheit(celsius) {
-	return celsius * (9/5) + 32;
-}
-const pCongelCelsius = 0;
-const pEbulicaoCelsius = 100;
+const converter = require('./converter.js');
 
-const pCongelFahrenheit = celsiusToFahrenheit(pCongelCelsius);
-const pEbulicaoFahrenheit = celsiusToFahrenheit(pEbulicaoCelsius);
+const freezingPointC = 0;
+const boilingPointC = 100;
 
-console.log(`O ponto de congelamento da água em Fahrenheit é: ${pCongelFahrenheit}`);
-console.log(`O ponto de ebulição da água em Fahrenheit é: ${pEbulicaoFahrenheit}`);
+const freezingPointF = converters.celsiusToFahrenheit(freezingPointC);
+const boilingPointF = converters.celsiusToFahrenheit(boilingPointC);
+
+console.log(`The freezing point of water in Fahrenheit is ${freezingPointF}`);
+
+console.log(`The boiling point of water in Fahrenheit is ${boilingPointF}`);
